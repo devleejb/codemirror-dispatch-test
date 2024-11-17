@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  yorkie:
+    image: "yorkieteam/yorkie:0.5.5"
+    container_name: "yorkie"
+    command: ["server", "--enable-pprof", "--backend-snapshot-threshold=1"]
+    restart: always
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
