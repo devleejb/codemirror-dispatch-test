@@ -15,11 +15,11 @@ view.dispatch({
 });
 ```
 
-<video src="./video.mp4"></video>
+https://github.com/user-attachments/assets/408ac770-e92b-451a-bd7f-6c6fcb4007d8
 
 However, there are following issues.
 
-1. While dragging with the mouse, if a snapshot event occurs, the starting point of the drag moves to the topmost position.
+1. While dragging with the mouse, if a snapshot event occurs, the starting point of the drag moves to the topmost position. (Dragging with the keyboard arrow keys works fine.)
 2. If a snapshot event occurs during text input, there are intermittent instances where the scroll jumps to the top and then returns to the current position.
 
 ## How to run?
